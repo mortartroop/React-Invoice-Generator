@@ -40,7 +40,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode }) => {
       : new Date(invoiceDate.valueOf())
 
   if (invoice.invoiceDueDate === '') {
-    invoiceDueDate.setDate(invoiceDueDate.getDate() + 30)
+    invoiceDueDate.setDate(invoiceDueDate.getDate() + 14)
   }
 
   const handleChange = (name: keyof Invoice, value: string) => {
